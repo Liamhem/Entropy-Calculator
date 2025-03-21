@@ -30,7 +30,8 @@ def main():
         print("Quitting...")
         exit(0)
     except SyntaxError as e:
-        print(e, "Error.")
+        print(e, "Error.\n")
+        entropy()
     finally:
         sys.exit(0)
 if __name__ == "__main__":
