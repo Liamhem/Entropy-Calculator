@@ -6,7 +6,7 @@ As you might have guessed, a high entropy password is a good password.
 
 The formula for calculating password entropy is as follows:
 
-$E = \log_2(R^L)$
+### $E = \log_2(R^L)$
 
 E: Entropy, measured in bits.
 R = Pool of characters.
