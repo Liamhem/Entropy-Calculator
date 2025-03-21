@@ -8,7 +8,7 @@ The formula for calculating password entropy is as follows:
 
 ### $E = \log_2(R^L)$
 
-E: Entropy, measured in bits.
+E = Entropy, measured in bits.
 
 R = Pool of characters.
 
