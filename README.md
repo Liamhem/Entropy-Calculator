@@ -4,7 +4,9 @@ This simple Python program takes a password as input and calculates its entropy.
 
 As you might have guessed, a high entropy password is a good password.
 
+## Download:
+```git clone https://github.com/Liamhem/Entropy-Calculator/```
 ## Usage:
-### python entropy.py
+```python entropy.py```
 ### OR
-### python3 entropy.py
+```python3 entropy.py```
