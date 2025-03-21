@@ -4,6 +4,15 @@ This simple Python program takes a password as input and calculates its entropy.
 
 As you might have guessed, a high entropy password is a good password.
 
+The formula for calculating password entropy is as follows:
+$$
+E = \log_2(R^L)$
+$$
+
+E: Entropy, measured in bits.
+R = Pool of characters.
+L = Password length.
+
 ## Download:
 ```git clone https://github.com/Liamhem/Entropy-Calculator/```
 ## Usage:
