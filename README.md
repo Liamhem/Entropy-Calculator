@@ -18,7 +18,7 @@ L = Password length.
 ```git clone https://github.com/Liamhem/Entropy-Calculator/```
 ## Usage:
 
-You can run this through CLI or through your IDE of choice.
+You can run this through CLI or your IDE of choice.
 
 ```python entropy.py```
 ### OR
