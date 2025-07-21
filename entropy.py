@@ -1,11 +1,13 @@
-import math # Use formula log2(R ** L)
+import getpass
+import math
 import string
 import sys
 
-def entropy():
+def calculate_entropy():
     pool_size = 0
-    password = input("Enter your password to have it checked:\n")
+    password = getpass.getpass("Enter your password to have it checked (output will be hidden):\n")
     password_length = len(password)
+    # Check for upper and lower case letters, numbers, and special characters
     if any(index in string.punctuation for index in password):
         pool_size += 32
     if any(index.isdigit() for index in password):
@@ -21,17 +23,17 @@ def entropy():
     print(f'Password length: {password_length}')
     print(f'\nEntropy: {entropy_result:.2f} bits.')
     if entropy_result <= 60:
-        print("--- This value is a little low. Try opting for a stronger password. ---")
+        print("*This value is low. Try opting for a stronger password.")
         
 def main():
     try:
-        entropy()
+        calculate_entropy()
     except KeyboardInterrupt:
         print("Quitting...")
         exit(0)
     except SyntaxError as e:
         print(e, "Error.\n")
-        entropy()
+        calculate_entropy()
     finally:
         sys.exit(0)
         
