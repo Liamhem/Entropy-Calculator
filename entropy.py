@@ -1,3 +1,5 @@
+# The purpose of this program is to calculate the entropy of a password gathered from input
+# The formula for password entropy is log2(R ** L)
 import getpass
 import math
 import string
